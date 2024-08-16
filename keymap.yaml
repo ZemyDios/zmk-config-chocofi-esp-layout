@@ -14,8 +14,8 @@ layers:
     - {h: Gui, t: Enter}
   NUM:
     - [{t: º, s: ª}, "@", "#", "{", "}", "*", "7", "8", "9", {t: "-", s: "_"}]
-    - ["$", {t: "&", s: ¬}, {t: "¡", s: "!"}, {t: "(", h: LShift}, ")", "/", {t: "4", h: RShift}, "5", "6", "+"]
-    - ["%", {t: "'", s: '"'}, {t: "¿", s: "?"}, "[", "]", "0", "1", "2", "3", "="]
+    - ["$", {t: "&", s: ¬}, {t: "¡", s: "!", h: Gui}, {t: "(", h: LShift}, ")", "/", {t: "4", h: RShift}, {t: "5", s: "<"}, {t: "6", s: ">"}, "+"]
+    - ["%", {t: "'", s: '"'}, {t: "¿", s: "?"}, "[", "]", "0", "1", "2", "3", {t: "=", s: "~"}]
     - Space
     - FUN
     - BSpace
@@ -23,9 +23,9 @@ layers:
     - {type: held}
     - null
   NAV:
-    - [Forward, BTN, "Vol Up", "Bright Up", "Next", null, Copy, Paste, Cut, Undo]
+    - [Forward, BTN, "Vol Up", "Bright Up", "Next", Delete, Copy, Paste, Cut, Undo]
     - [Back, BTP, "Vol Down", "Bright Down", "Prev", {t: Left, s: H}, {t: Down, s: J}, {t: Up, s: K}, {t: Right, s: L}, Esc]
-    - [null, BTC, "Mute", "Bright Auto", "Pause", null, null, null, null, Refo]
+    - [null, BTC, "Mute", "Bright Auto", "Pause", "Page Up", "Page Down", Home, End, Refo]
     - null
     - {type: held}
     - null
@@ -33,12 +33,12 @@ layers:
     - FUN
     - RAlt
   FUN:
-    - [F1, F2, F3, F4, F5, "Caps Lock", null, DEF, CLM, GME]
+    - [F1, F2, F3, F4, F5, "Caps Lock", null, null, null, null]
     - [F6, F7, F8, F9, F10, BT1, BT2, BT3, BT4, BT5]
-    - [null, "Desk Prev", "Desk Next", F11, F12, "Out USB", "Out BLE", "Print Scrn", "Pause Break", "BT CLR"]
-    - {t: Boot, type: ghost}
-    - Reset
+    - [null, "Desk Prev", "Desk Next", F11, F12, null, null, "Print Scrn", "Pause Break", "BT CLR"]
+    - null
     - {type: held}
+    - null
+    - null
     - {type: held}
-    - Reset
-    - {t: Boot, type: ghost}
+    - null
