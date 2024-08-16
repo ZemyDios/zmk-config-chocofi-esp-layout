@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
-/*#define DEF 0
+#define DEF 0
 #define NUM 1
-#define FUN 2*/
+#define FUN 2
 
 / {
     keymap {
@@ -23,7 +23,7 @@
             // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  | P ¨ |
             // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  | Ñ ´ |
             // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  | , ; | . : | |/\ |
-            //             | GUI | CTRL| BSP |   | SPC | TAB | ENT |
+            //             | TAB | NAV | BSP |   | SPC | SYM | ENT |
 
             bindings = <
                 &mt ESC Q       &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P      
@@ -34,11 +34,11 @@
         };
         /*
         numpad {
-            label = "NUM
+            label = "NUM";
             // | º ª |  @  |  #  |  {  |  }  |   |  *  |  7  |  8  |  9  | - _ |
             // |  $  | & ¬ | ¡ ! |  (  |  )  |   |  /  |  4  | 5 < | 6 > |  +  |
             // |  %  | ' " | ¿ ? |  [  |  ]  |   |  0  |  1  |  2  | 3 · |  =  |
-            //             |     |     |     |   |     |     |     |
+            //             |     |     |     |   |     | --- |     |
 
             bindings = <
                 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P      

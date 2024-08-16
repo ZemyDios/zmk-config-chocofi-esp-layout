@@ -1,0 +1,44 @@
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x5_3
+layers:
+  DEF:
+    - [{h: Esc, t: Q}, W, E, R, T, Y, U, I, O, {t: P, h: "¨"}]
+    - [{h: Ctrl, t: A}, S, {h: LAlt, t: D}, {h: LShift, t: F}, G, H, {h: RShift, t: J}, {h: RAlt, t: K}, L, {h: "´", t: Ñ}]
+    - [Z, X, C, V, B, N, M, {t: ",", s: ";"}, {t: ".", s: ":"}, {t: /, s: \, h: "|"}]
+    - {h: Gui, t: Tab}
+    - NAV
+    - BSpace
+    - Space
+    - NUM
+    - {h: Gui, t: Enter}
+  NUM:
+    - [{t: º, s: ª}, "@", "#", "{", "}", "*", "7", "8", "9", {t: "-", s: "_"}]
+    - ["$", {t: "&", s: ¬}, {t: "¡", s: "!"}, {t: "(", h: LShift}, ")", "/", {t: "4", h: RShift}, "5", "6", "+"]
+    - ["%", {t: "'", s: '"'}, {t: "¿", s: "?"}, "[", "]", "0", "1", "2", "3", "="]
+    - Space
+    - FUN
+    - BSpace
+    - null
+    - {type: held}
+    - null
+  NAV:
+    - [Forward, BTN, "Vol Up", "Bright Up", "Next", null, Copy, Paste, Cut, Undo]
+    - [Back, BTP, "Vol Down", "Bright Down", "Prev", {t: Left, s: H}, {t: Down, s: J}, {t: Up, s: K}, {t: Right, s: L}, Esc]
+    - [null, BTC, "Mute", "Bright Auto", "Pause", null, null, null, null, Refo]
+    - null
+    - {type: held}
+    - null
+    - RShift
+    - FUN
+    - RAlt
+  FUN:
+    - [F1, F2, F3, F4, F5, "Caps Lock", null, DEF, CLM, GME]
+    - [F6, F7, F8, F9, F10, BT1, BT2, BT3, BT4, BT5]
+    - [null, "Desk Prev", "Desk Next", F11, F12, "Out USB", "Out BLE", "Print Scrn", "Pause Break", "BT CLR"]
+    - {t: Boot, type: ghost}
+    - Reset
+    - {type: held}
+    - {type: held}
+    - Reset
+    - {t: Boot, type: ghost}
