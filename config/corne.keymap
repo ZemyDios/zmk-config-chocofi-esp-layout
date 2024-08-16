@@ -13,12 +13,14 @@
 #define SYMBOL 2
 
 / {
+    chosen { zmk,matrix_transform = &five_column_transform; };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
+                &mt ESC Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hm LCTRL A     &kp S           &hm LALT D      &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RALT K      &kp L           &kp SEMI
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &coma_semi      &dot_colon      &slash_bck 
                                                 &mt LGUI TAB    &mo NUMBER      &kp BSPC        &kp SPACE       &mo SYMBOL      &mt RGUI ENTER
