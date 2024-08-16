@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#define DEF 0
+/*#define DEF 0
 #define NUM 1
-#define FUN 2
+#define FUN 2*/
 
 / {
     keymap {
