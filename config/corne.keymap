@@ -13,9 +13,6 @@
 #define SYMBOL 2
 
 / {
-    behaviors = {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
