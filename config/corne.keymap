@@ -19,8 +19,8 @@
         default_layer {
             bindings = <
                 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
-                &mt LCTRL A     &kp S           &mt LALT D      &mt LSHFT F     &kp G           &kp H           &mt RSHFT J     &mt RALT K      &kp L           &kp SEMI
-                &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH 
+                &hm LCTRL A     &kp S           &hm LALT D      &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RALT K      &kp L           &kp SEMI
+                &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &slash_bck 
                                                 &mt LGUI TAB    &mo NUMBER      &kp BSPC        &kp SPACE       &mo SYMBOL      &mt RGUI ENTER
             >;
         };
@@ -41,6 +41,27 @@
                 &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH 
                                         &kp LGUI    &mo 1       &kp SPACE   &kp RET     &mo 2       &kp RALT
             >;
+        };
+    };
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        slash_bck: slash_bck {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_BCK";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
     };
 };
