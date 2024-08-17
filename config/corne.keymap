@@ -32,7 +32,7 @@
         numbers {
             bindings = <
                 &kp GRAVE       &at_grave       &hashtack       &kp RA(APOS)    &kp RA(BSLH)    &kp KP_ASTERISK &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
-                &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &plus_pow
+                &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LS(N8)&kp LS(N9)      &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &plus_pow
                 &kp PRCNT       &single_double  &interogs       &brack_less     &brack_grtr     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
             >;
