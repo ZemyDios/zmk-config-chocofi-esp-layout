@@ -4,7 +4,7 @@ layout:
 layers:
   DEF:
     - [{h: Esc, t: Q}, W, E, R, T, Y, U, I, O, P]
-    - [{h: Ctrl, t: A}, S, {h: LAlt, t: D}, {h: LShift, t: F}, G, H, {h: RShift, t: J}, {h: RAlt, t: K}, L, {h: "´", t: Ñ, s: "¨"}]
+    - [A, {h: LCtrl, t: S}, {h: LAlt, t: D}, {h: LShift, t: F}, G, H, {h: RShift, t: J}, {h: RAlt, t: K}, {h: RCtrl, t: L}, {h: "´", t: Ñ, s: "¨"}]
     - [Z, X, C, V, B, N, M, {t: ",", s: ";"}, {t: ".", s: ":"}, {t: /, s: \, h: "|"}]
     - {h: Gui, t: Tab}
     - NAV
@@ -31,10 +31,10 @@ layers:
     - null
     - RShift
     - FUN
-    - RAlt
+    - Enter
   FUN:
     - [F1, F2, F3, F4, F5, "Caps Lock", null, null, null, null]
-    - [F6, F7, F8, F9, F10, BT0, BT1, BT2, BT3, BT4]
+    - [F6, F7, F8, F9, F10, BT0, BT1, BT2, BT3, BT]
     - [null, null, null, F11, F12, Reset, Boot, "Print Scrn", "Pause Break", "BT CLR"]
     - null
     - {type: held}
@@ -42,3 +42,15 @@ layers:
     - null
     - {type: held}
     - null
+    
+combos:
+  - p: [12, 17]
+    k: 'Panic'
+    o: 0.5
+    a: 'top'
+  - p: [16, 13]
+    k: 'Caps Lock'
+    o: 0.5
+    a: 'bottom'
+  - p: [14, 15]
+    k: 'Panic'

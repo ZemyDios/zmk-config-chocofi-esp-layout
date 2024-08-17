@@ -291,6 +291,26 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">Enter</text>
 <text x="0" y="24" class="key hold">Gui</text>
 </g>
+<g class="combo combopos-0">
+<path d="M364,27 h-218 a6.0,6.0 0 0 0 -6.0,6.0 v32" class="combo"/>
+<path d="M364,27 h218 a6.0,6.0 0 0 1 6.0,6.0 v32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="14" width="28" height="26" class="combo"/>
+<text x="364" y="27" class="combo tap">Panic</text>
+</g>
+<g class="combo combopos-1">
+<path d="M364,148 h162 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
+<path d="M364,148 h-162 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
+<text x="364" y="148" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Lock</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<path d="M364,98 l-93,0" class="combo"/>
+<path d="M364,98 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="85" width="28" height="26" class="combo"/>
+<text x="364" y="98" class="combo tap">Panic</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-NUM">
@@ -452,6 +472,26 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
+<g class="combo combopos-0">
+<path d="M364,27 h-218 a6.0,6.0 0 0 0 -6.0,6.0 v32" class="combo"/>
+<path d="M364,27 h218 a6.0,6.0 0 0 1 6.0,6.0 v32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="14" width="28" height="26" class="combo"/>
+<text x="364" y="27" class="combo tap">Panic</text>
+</g>
+<g class="combo combopos-1">
+<path d="M364,148 h162 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
+<path d="M364,148 h-162 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
+<text x="364" y="148" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Lock</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<path d="M364,98 l-93,0" class="combo"/>
+<path d="M364,98 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="85" width="28" height="26" class="combo"/>
+<text x="364" y="98" class="combo tap">Panic</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-NAV">
@@ -611,7 +651,27 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">RAlt</text>
+<text x="0" y="0" class="key tap">Enter</text>
+</g>
+<g class="combo combopos-0">
+<path d="M364,27 h-218 a6.0,6.0 0 0 0 -6.0,6.0 v32" class="combo"/>
+<path d="M364,27 h218 a6.0,6.0 0 0 1 6.0,6.0 v32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="14" width="28" height="26" class="combo"/>
+<text x="364" y="27" class="combo tap">Panic</text>
+</g>
+<g class="combo combopos-1">
+<path d="M364,148 h162 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
+<path d="M364,148 h-162 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
+<text x="364" y="148" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Lock</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<path d="M364,98 l-93,0" class="combo"/>
+<path d="M364,98 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="85" width="28" height="26" class="combo"/>
+<text x="364" y="98" class="combo tap">Panic</text>
 </g>
 </g>
 </g>
@@ -756,6 +816,26 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<path d="M364,27 h-218 a6.0,6.0 0 0 0 -6.0,6.0 v32" class="combo"/>
+<path d="M364,27 h218 a6.0,6.0 0 0 1 6.0,6.0 v32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="14" width="28" height="26" class="combo"/>
+<text x="364" y="27" class="combo tap">Panic</text>
+</g>
+<g class="combo combopos-1">
+<path d="M364,148 h162 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
+<path d="M364,148 h-162 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
+<text x="364" y="148" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Lock</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<path d="M364,98 l-93,0" class="combo"/>
+<path d="M364,98 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="85" width="28" height="26" class="combo"/>
+<text x="364" y="98" class="combo tap">Panic</text>
 </g>
 </g>
 </g>
