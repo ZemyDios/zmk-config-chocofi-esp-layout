@@ -3,8 +3,8 @@ layout:
   qmk_layout: LAYOUT_split_3x5_3
 layers:
   DEF:
-    - [{h: Esc, t: Q}, W, E, R, T, Y, U, I, O, {t: P, h: "¨"}]
-    - [{h: Ctrl, t: A}, S, {h: LAlt, t: D}, {h: LShift, t: F}, G, H, {h: RShift, t: J}, {h: RAlt, t: K}, L, {h: "´", t: Ñ}]
+    - [{h: Esc, t: Q}, W, E, R, T, Y, U, I, O, P]
+    - [{h: Ctrl, t: A}, S, {h: LAlt, t: D}, {h: LShift, t: F}, G, H, {h: RShift, t: J}, {h: RAlt, t: K}, L, {h: "´", t: Ñ, s: "¨"}]
     - [Z, X, C, V, B, N, M, {t: ",", s: ";"}, {t: ".", s: ":"}, {t: /, s: \, h: "|"}]
     - {h: Gui, t: Tab}
     - NAV
@@ -13,9 +13,9 @@ layers:
     - NUM
     - {h: Gui, t: Enter}
   NUM:
-    - [{t: º, s: ª}, "@", "#", "{", "}", "*", "7", "8", "9", {t: "-", s: "_"}]
-    - ["$", {t: "&", s: ¬}, {t: "¡", s: "!", h: Gui}, {t: "(", h: LShift}, ")", "/", {t: "4", h: RShift}, {t: "5", s: "<"}, {t: "6", s: ">"}, "+"]
-    - ["%", {t: "'", s: '"'}, {t: "¿", s: "?"}, "[", "]", "0", "1", "2", "3", {t: "=", s: "~"}]
+    - [{h: \, t: º, s: ª}, "@", "#", "{", "}", "*", "7", "8", "9", {t: "-", s: "_"}]
+    - ["$", {t: "&", s: ¬}, {t: "¡", s: "!", h: Gui}, {t: "(", h: LShift}, ")", "/", {t: "4", h: RShift}, 5, 6, "+"]
+    - ["%", {t: "'", s: '"'}, {t: "¿", s: "?"}, {t: "[", s: "<"}, {t: "]", s: ">"}, "0", "1", "2", "3", {t: "=", s: "~"}]
     - Space
     - FUN
     - BSpace
