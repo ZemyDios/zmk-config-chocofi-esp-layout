@@ -220,6 +220,7 @@
         FUN_LAYER {
             bindings = <&mo FUNCTION>;
             key-positions = <31 34>;
+            layers = <DEFAULT>;
         };
     };
 };
