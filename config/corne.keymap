@@ -41,7 +41,7 @@
         navigation {
             bindings = <
                 &kp MB5         &bt BT_NXT      &kp C_VOL_UP    &kp C_BRI_UP    &kp C_NEXT      &kp DEL         &kp K_COPY      &kp K_PASTE     &kp K_CUT       &kp K_UNDO
-                &kp MB4         &bt BT_PRV      &kp C_VOL_DN    &kp C_BRI_DN    &kp C_PREV      &left_h         &down_j         &up_k           &right_l        &kp ESC
+                &kp MB4         &bt BT_PRV      &kp C_VOL_DN    &kp C_BRI_DN    &kp C_PREV      &kp H           &hm RSHFT J     &hm RALT K      &kp L           &kp ESC
                 &bt BT_SEL 0    &bt BT_CLR      &kp C_MUTE      &kp C_BRI_AUTO  &kp C_PP        &kp PG_UP       &kp PG_DN       &kp HOME        &kp END         &kp K_REDO 
                                                 &none           &mo NAVIGATION  &none           &kp RSHFT       &mo FUNCTION    &kp RALT
             >;
@@ -174,41 +174,5 @@
         };
 
         // navigation
-
-        left_h: left_h {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_H";
-            bindings = <&kp LEFT>, <&kp h>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        down_j: down_j {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOWN_J";
-            bindings = <&kp DOWN>, <&kp j>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        
-        up_k: up_k {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UP_K";
-            bindings = <&kp UP>, <&kp k>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        right_l: right_l {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RIGHT_L";
-            bindings = <&kp RIGHT>, <&kp l>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 };

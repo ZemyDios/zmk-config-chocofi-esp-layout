@@ -1,1 +1,39 @@
 hola como estas cariño yo muy bien te quiero mucho.º4" 
+
+
+
+left_h: left_h {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_H";
+            bindings = <&kp LEFT>, <&kp h>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        down_j: down_j {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_J";
+            bindings = <&kp DOWN>, <&kp j>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        
+        up_k: up_k {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_K";
+            bindings = <&kp UP>, <&kp k>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        right_l: right_l {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_L";
+            bindings = <&kp RIGHT>, <&kp l>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
