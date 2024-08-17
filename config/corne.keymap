@@ -31,7 +31,7 @@
 
         numbers {
             bindings = <
-                &kp GRAVE       &at_grave       &hashtack       &l_quota        &kp RBRC        &kp KP_ASTERISK &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
+                &kp GRAVE       &at_grave       &hashtack       &l_quota        &r_quota        &kp KP_ASTERISK &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
                 &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &plus_pow
                 &kp PRCNT       &single_double  &interogs       &brack_less     &brack_grtr     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
@@ -123,6 +123,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "L_QUOTA";
             bindings = <&kp RA(APOS)>, <&kp RA(APOS)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        r_quota: r_quota {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_QUOTA";
+            bindings = <&kp RA(BSLH)>, <&kp RA(BSLH)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
