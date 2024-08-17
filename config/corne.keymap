@@ -27,15 +27,6 @@
                                                 &mt LGUI TAB    &mo NAVIGATION  &kp BSPC        &kp SPACE       &mo NUMBER      &mt RGUI ENTER
             >;
         };
-
-        number {
-            bindings = <
-                &kp GRAVE       &kp AT          &kp HASH        &kp LBRC        &kp RBRC        &kp ASTRK       &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
-                &kp DOLLAR      &apers_line     &hm LGUI excls  &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp num_more    &kp num_less    &kp KP_PLUS
-                &kp PRCNT       &kp X           &kp C           &kp RA(LBKT)    &kp RA(RBKT)    &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &slash_bck 
-                                                &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
-            >;
-        };
     };
 
     behaviors {
@@ -76,43 +67,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-
-        apers_line: apers_line {
-            compatible = "zmk,behavior-mod-morph";
-            label = "APERS_LINE";
-            bindings = <&kp AMPERSAND>, <&kp RA(N6)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        excls: excls {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EXCLS";
-            bindings = <&kp EXCL>, <&kp EQUAL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        num_more: num_more {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUM_MORE";
-            bindings = <&kp KP_N5>, <&kp BSLH>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        num_less: num_less {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUM_LESS";
-            bindings = <&kp KP_N6>, <&kp LS(BSLH)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 };
