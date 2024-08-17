@@ -43,7 +43,7 @@
                 &mkp MB5        &bt BT_NXT      &kp C_VOL_UP    &kp C_BRI_UP    &kp C_NEXT      &kp DEL         &kp K_COPY      &kp K_PASTE     &kp K_CUT       &kp K_UNDO
                 &mkp MB4        &bt BT_PRV      &kp C_VOL_DN    &kp C_BRI_DN    &kp C_PREV      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp ESC
                 &kp K_LOCK      &bt BT_CLR      &kp C_MUTE      &kp C_BRI_AUTO  &kp C_PP        &kp PG_UP       &kp PG_DN       &kp HOME        &kp END         &kp K_REDO 
-                                                &none           &mo NAVIGATION  &none           &kp RSHFT       &mo FUNCTION    &kp RALT
+                                                &none           &mo NAVIGATION  &none           &kp RSHFT       &mo FUNCTION    &kp ENTER
             >;
         };
 
