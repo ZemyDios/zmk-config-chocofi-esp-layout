@@ -31,8 +31,8 @@
         numbers {
             bindings = <
                 &kp GRAVE       &kp AT          &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
-                &kp DOLLAR      &aper_neg       &hm LGUI excls  &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &kp PLUS
-                &kp PRCNT       &kp X           &kp C           &kp V           &kp B           &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &slash_bck 
+                &kp DOLLAR      &aper_neg       &hm LGUI A  &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &kp PLUS
+                &kp PRCNT       &single_double  &kp C           &kp V           &kp B           &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &slash_bck 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
             >;
         };
@@ -91,10 +91,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        excls: excls {
+        single_double: single_double {
             compatible = "zmk,behavior-mod-morph";
-            label = "EXCLS";
-            bindings = <&kp EQUAL>, <&kp LS(N1)>;
+            label = "SINGLE_DOUBLE";
+            bindings = <&kp MINUS>, <&kp LS(N2)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
