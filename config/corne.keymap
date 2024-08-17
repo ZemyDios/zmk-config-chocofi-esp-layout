@@ -30,7 +30,7 @@
 
         numbers {
             bindings = <
-                &kp GRAVE       &kp AT          &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
+                &kp GRAVE       &at_grave       &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
                 &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &plus_pow
                 &kp PRCNT       &single_double  &interogs       &brack_less     &brack_less     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
@@ -81,6 +81,15 @@
         };
 
         // nums 
+
+        at_grave: at_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_GRAVE";
+            bindings = <&kp AT>, <&kp LBKT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
         aper_neg: aper_neg {
             compatible = "zmk,behavior-mod-morph";
