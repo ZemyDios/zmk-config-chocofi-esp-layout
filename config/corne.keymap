@@ -42,8 +42,17 @@
             bindings = <
                 &mkp MB5        &bt BT_NXT      &kp C_VOL_UP    &kp C_BRI_UP    &kp C_NEXT      &kp DEL         &kp K_COPY      &kp K_PASTE     &kp K_CUT       &kp K_UNDO
                 &mkp MB4        &bt BT_PRV      &kp C_VOL_DN    &kp C_BRI_DN    &kp C_PREV      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp ESC
-                &bt BT_SEL 0    &bt BT_CLR      &kp C_MUTE      &kp C_BRI_AUTO  &kp C_PP        &kp PG_UP       &kp PG_DN       &kp HOME        &kp END         &kp K_REDO 
+                &kp K_LOCK      &bt BT_CLR      &kp C_MUTE      &kp C_BRI_AUTO  &kp C_PP        &kp PG_UP       &kp PG_DN       &kp HOME        &kp END         &kp K_REDO 
                                                 &none           &mo NAVIGATION  &none           &kp RSHFT       &mo FUNCTION    &kp RALT
+            >;
+        };
+
+        function {
+            bindings = <
+                &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp Y           &kp CAPS        &none           &none           &none
+                &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4
+                &none           &none           &none           &kp F11         &kp F12         &sys_reset      &bootloader     &kp PSCRN       &kp PAUSE_BREAK &bt BT_CLR  
+                                                &none           &mo FUNCTION    &none           &none           &mo FUNCTION    &none
             >;
         };
     };
