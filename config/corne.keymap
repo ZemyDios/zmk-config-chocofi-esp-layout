@@ -104,7 +104,7 @@
         at_grave: at_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "AT_GRAVE";
-            bindings = <&kp AT>, <&kp LBKT>;
+            bindings = <&kp RA(N3)>, <&kp LBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
