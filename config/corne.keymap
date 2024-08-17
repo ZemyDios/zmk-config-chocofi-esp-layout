@@ -27,6 +27,15 @@
                                                 &mt LGUI TAB    &mo NAVIGATION  &kp BSPC        &kp SPACE       &mo NUMBER      &mt RGUI ENTER
             >;
         };
+
+        numbers {
+            bindings = <
+                &kp GRAVE       &kp AT          &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
+                &hm LCTRL A     &kp S           &hm LALT D      &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RALT K      &kp L           &nalt_tild
+                &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &slash_bck 
+                                                &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
+            >;
+        };
     };
 
     behaviors {
