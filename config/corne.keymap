@@ -131,7 +131,7 @@
         plus_pow: plus_pow {
             compatible = "zmk,behavior-mod-morph";
             label = "PLUS_POW";
-            bindings = <&kp PLUS>, <&kp LS(LBKT)>;
+            bindings = <&kp KP_PLUS>, <&kp LS(LBKT)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
