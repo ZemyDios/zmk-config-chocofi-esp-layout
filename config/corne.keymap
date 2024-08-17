@@ -32,7 +32,7 @@
             bindings = <
                 &kp GRAVE       &at_grave       &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
                 &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &plus_pow
-                &kp PRCNT       &single_double  &interogs       &brack_less     &brack_less     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
+                &kp PRCNT       &single_double  &interogs       &brack_less     &brack_grtr     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
             >;
         };
@@ -139,7 +139,7 @@
         brack_less: brack_less {
             compatible = "zmk,behavior-mod-morph";
             label = "BRACK_LESS";
-            bindings = <&kp RA(LBKT)>, <&kp BSLH>;
+            bindings = <&kp RA(LBKT)>, <&kp NUBS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -148,7 +148,7 @@
         brack_grtr: brack_grtr {
             compatible = "zmk,behavior-mod-morph";
             label = "BRACK_GRTR";
-            bindings = <&kp RA(RBKT)>, <&kp LS(BSLH)>;
+            bindings = <&kp RA(RBKT)>, <&kp LS(NUBS)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
