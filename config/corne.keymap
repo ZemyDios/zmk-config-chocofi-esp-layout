@@ -13,6 +13,7 @@
 #define NUMBER 1
 #define NAVIGATION 2
 #define FUNCTION 3
+#define GAME 4
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -49,10 +50,19 @@
 
         function {
             bindings = <
-                &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp CAPS        &none           &none           &none           &none
+                &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp CAPS        &none           &none           &none           &to GAME
                 &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4
                 &none           &none           &none           &kp F11         &kp F12         &sys_reset      &bootloader     &kp PSCRN       &kp PAUSE_BREAK &bt BT_CLR  
                                                 &none           &mo FUNCTION    &none           &none           &mo FUNCTION    &none
+            >;
+        };
+
+        game {
+            bindings = <
+                &kp TAB         &kp Q           &kp W           &kp E           &kp R           &none           &none           &none           &none           &none
+                &kp LSHFT       &kp A           &kp S           &kp D           &kp F           &none           &none           &none           &none           &none
+                &kp LCTRL       &kp Z           &kp X           &kp C           &kp V           &none           &none           &none           &none           &none  
+                                                &kp ESC         &kp M           &kp SPACE       &to DEFAULT     &none           &none
             >;
         };
     };
@@ -202,25 +212,53 @@
     combos {
         compatible = "zmk,combos";
 
-        RESET {
+        RESET_R {
             bindings = <&esc_0>;
-            key-positions = <12 17>;
+            key-positions = <3 4>;
+            layers = <DEFAULT NAVIGATION NUMBER FUNCTION>;
+        };
+
+        RESET_L {
+            bindings = <&esc_0>;
+            key-positions = <5 6>;
+            layers = <DEFAULT NAVIGATION NUMBER FUNCTION>;
+
         };
 
         toggle_shift {
             bindings = <&caps_word>;
-            key-positions = <13 16>;
-        };
-
-        RESET_w {
-            bindings = <&esc_0>;
             key-positions = <14 15>;
+            layers = <DEFAULT NAVIGATION NUMBER FUNCTION>;
         };
 
         FUN_LAYER {
             bindings = <&mo FUNCTION>;
             key-positions = <31 34>;
             layers = <DEFAULT>;
+        };
+
+        NUM1 {
+            bindings = <&kp N1>;
+            key-positions = <21 30>;
+            layers = <GAME>;
+        };
+
+        NUM2 {
+            bindings = <&kp N2>;
+            key-positions = <22 30>;
+            layers = <GAME>;
+        };
+
+        NUM3 {
+            bindings = <&kp N3>;
+            key-positions = <23 30>;
+            layers = <GAME>;
+        };
+
+        NUM4 {
+            bindings = <&kp N4>;
+            key-positions = <24 30>;
+            layers = <GAME>;
         };
     };
 };
