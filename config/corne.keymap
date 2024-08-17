@@ -68,6 +68,13 @@
             bindings = <&kp>, <&kp>;
         };
 
+        esc_0: esc_0 {
+            compatible = "zmk,behavior-macro";
+            label = "ESC_0";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp ESCAPE>;
+        };
+
         // default
 
         slash_bck: slash_bck {
@@ -189,6 +196,30 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        RESET {
+            bindings = <&esc_0>;
+            key-positions = <12 17>;
+        };
+
+        toggle_shift {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+        };
+
+        RESET_w {
+            bindings = <&esc_0>;
+            key-positions = <14 15>;
+        };
+
+        FUN_LAYER {
+            bindings = <&mo FUNCTION>;
+            key-positions = <31 34>;
         };
     };
 };
