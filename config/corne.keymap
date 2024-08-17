@@ -31,8 +31,8 @@
         numbers {
             bindings = <
                 &kp GRAVE       &kp AT          &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
-                &hm LCTRL A     &kp S           &hm LALT D      &hm LSHFT F     &kp G           &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &kp PLUS
-                &kp Z           &kp X           &kp C           &kp V           &kp B           &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &slash_bck 
+                &kp DOLLAR      &kp S           &hm LGUI D      &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &kp PLUS
+                &kp PRCNT       &kp X           &kp C           &kp V           &kp B           &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &slash_bck 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
             >;
         };
