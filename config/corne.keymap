@@ -31,8 +31,8 @@
         numbers {
             bindings = <
                 &kp GRAVE       &kp AT          &kp HASH        &kp LBRC        &kp RBRC        &kp ASTERISK    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
-                &kp DOLLAR      &aper_neg       &hm LGUI &excls &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &kp PLUS
-                &kp PRCNT       &single_double  &interogs       &brack_less     &brack_less     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &slash_bck 
+                &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LPAR  &kp RPAR        &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &kp PLUS
+                &kp PRCNT       &single_double  &interogs       &brack_less     &brack_less     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
             >;
         };
@@ -94,7 +94,7 @@
         excls: excls {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCLS";
-            bindings = <EQUAL>, <LS(N1)>;
+            bindings = <&hm LGUI EQUAL>, <&hm LGUI LS(N1)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -131,6 +131,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BRACK_GRTR";
             bindings = <&kp RA(RBKT)>, <&kp LS(BSLH)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ecual_virg: ecual_virg {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ECUAL_VIRG";
+            bindings = <&kp LS(N0)>, <&kp RA(N4)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
