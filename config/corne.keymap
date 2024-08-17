@@ -23,7 +23,7 @@
         default {
             bindings = <
                 &mt ESC Q       &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
-                &hm LCTRL A     &kp S           &hm LALT D      &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RALT K      &kp L           &nalt_tild
+                &kp A           &hm LCTRL S     &hm LALT D      &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RALT K      &hm RCTRL L     &nalt_tild
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &slash_bck 
                                                 &mt LGUI TAB    &mo NAVIGATION  &kp BSPC        &kp SPACE       &mo NUMBER      &mt RGUI ENTER
             >;
