@@ -32,9 +32,9 @@
 
         numbers {
             bindings = <
-                &kp GRAVE       &at_grave       &hashtack       &kp RA(APOS)    &kp RA(BSLH)    &kp KP_ASTERISK &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH
-                &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LS(N8)&kp LS(N9)      &kp KP_SLASH    &hm RSHFT KP_N4 &kp KP_N5       &kp KP_N6       &plus_pow
-                &kp PRCNT       &single_double  &interogs       &brack_less     &brack_grtr     &kp KP_N0       &kp KP_N1       &kp KP_N2       &kp KP_N3       &ecual_virg 
+                &kp GRAVE       &at_grave       &hashtack       &kp RA(APOS)    &kp RA(BSLH)    &kp KP_ASTERISK &num_7          &num_8          &num_9          &kp SLASH
+                &kp DOLLAR      &aper_neg       &excls          &hm LSHFT LS(N8)&kp LS(N9)      &kp KP_SLASH    &num_4          &num_5          &num_6          &plus_pow
+                &kp PRCNT       &single_double  &interogs       &brack_less     &brack_grtr     &num_0          &num_1          &num_2          &num_3          &ecual_virg 
                                                 &kp SPACE       &mo FUNCTION    &kp BSPC        &none           &mo NUMBER      &none
             >;
         };
@@ -206,6 +206,86 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        num_0: num_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_0";
+            bindings = <&kp N0>, <&kp N0>;
+
+            #binding-cells = <0>;
+        };
+
+        num_1: num_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_1";
+            bindings = <&kp N1>, <&kp N1>;
+
+            #binding-cells = <0>;
+        };
+
+        num_2: num_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_2";
+            bindings = <&kp N2>, <&kp N2>;
+
+            #binding-cells = <0>;
+        };
+
+        num_3: num_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_3";
+            bindings = <&kp N3>, <&kp N3>;
+
+            #binding-cells = <0>;
+        };
+
+        num_4: num_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_4";
+            bindings = <&hm RSHFT N4>, <&hm RSHFT N4>;
+
+            #binding-cells = <0>;
+        };
+
+        num_5: num_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_5";
+            bindings = <&kp N5>, <&kp N5>;
+
+            #binding-cells = <0>;
+        };
+
+        num_6: num_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_6";
+            bindings = <&kp N6>, <&kp N6>;
+
+            #binding-cells = <0>;
+        };
+
+        num_7: num_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_7";
+            bindings = <&kp N7>, <&kp N7>;
+
+            #binding-cells = <0>;
+        };
+
+        num_8: num_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_8";
+            bindings = <&kp N8>, <&kp N8>;
+
+            #binding-cells = <0>;
+        };
+
+        num_9: num_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_9";
+            bindings = <&kp N9>, <&kp N9>;
+
+            #binding-cells = <0>;
         };
     };
 
